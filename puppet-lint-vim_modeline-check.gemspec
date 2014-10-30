@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-vim_modeline-check'
   spec.version     = '0.0.2'
-  spec.homepage    = 'https://github.com/robertpearce/puppet-lint-vim_modelinene-check'
+  spec.homepage    = 'https://github.com/robertpearce/puppet-lint-vim_modeline-check'
   spec.license     = 'MIT'
   spec.author      = 'Robert Pearce'
   spec.email       = 'r.pearce@gns.cri.nz'
