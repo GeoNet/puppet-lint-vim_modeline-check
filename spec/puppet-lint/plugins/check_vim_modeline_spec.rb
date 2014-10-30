@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'vim_modeline' do
-  let(:msg) { 'expected vim modeline at the end of the file' }
+  let(:msg) { 'expected vim modeline as last line of file' }
 
   context 'with fix disabled' do
     context 'code not ending with a vim modeline' do
@@ -17,7 +17,7 @@ describe 'vim_modeline' do
     end
 
     context 'code ending with a vim modeline' do
-      let(:code) { "'blah\nblah\n# vim: set ts=2 sw=2 tw=0 et:\n'\n" }
+      let(:code) { "'blah\nblah\n# vim: set ts=2 sw=2 tw=0 et:'\n" }
 
       it 'should not detect any problems' do
         expect(problems).to have(0).problems
